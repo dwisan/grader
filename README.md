@@ -41,3 +41,8 @@ $ tar xfvz /tmp/grader-compiled.tgz
 $ cd /home/grader-compiled
 $ nano grader.conf
 ```
+> runing grader
+```
+$ cd /home/grader
+$ ./grader toi
+```
