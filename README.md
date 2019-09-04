@@ -8,4 +8,6 @@ $ sudo apt update
 $ sudo apt install docker-ce
 $ sudo systemctl status docker
 $ sudo usermod -aG docker ${USER}
+
+source: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
 ```
