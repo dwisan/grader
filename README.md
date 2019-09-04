@@ -11,3 +11,23 @@ $ sudo usermod -aG docker ${USER}
 
 source: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
 ```
+
+> Installing docker-compose
+```
+$ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
+$ docker-compose --version
+$ docker-compose up
+```
+> Installing submission
+```
+$ cd /home
+$ tar xfvz /tmp/submission.tgz
+$ cd submission
+$ nano docker-compose.yml
+```
+> Start Submission
+```
+$ cd /home/submission
+$ docker-compose up -d
+```
