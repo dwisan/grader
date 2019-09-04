@@ -17,7 +17,6 @@ source: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-
 $ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 $ sudo chmod +x /usr/local/bin/docker-compose
 $ docker-compose --version
-$ docker-compose up
 ```
 > Installing submission
 ```
@@ -30,4 +29,15 @@ $ nano docker-compose.yml
 ```
 $ cd /home/submission
 $ docker-compose up -d
+```
+> Install grader
+```
+$ sudo apt-get install g++-multilib
+$ sudo apt-get install  libmysqlclient-dev
+$ sudo apt-get install  build-essential
+$ sudo apt-get install  gcc g++
+$ cd /home
+$ tar xfvz /tmp/grader-compiled.tgz
+$ cd /home/grader-compiled
+$ nano grader.conf
 ```
